@@ -1,0 +1,24 @@
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;" src="{{avatarUrl}}"></image>
+      </view>
+      <view class="text">
+        <text>{{nickName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <span style="vertical-align: middle">所在省份</span>
+    </view>
+    <view class="weui-cell__ft">{{province}}</view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <span style="vertical-align: middle">所在城市</span>
+    </view>
+    <view class="weui-cell__ft">{{city}}</view>
+  </view>
+</view>

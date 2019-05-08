@@ -1,0 +1,22 @@
+
+<view id='image'>
+  <image style="width: 100%; height: 200px; background-color: #eeeeee;" src='{{image}}'></image>
+</view>
+
+<view id='title'>
+  <view>
+    <text style='font-size:32px'>{{title}}</text>
+  </view>
+  <view>
+    <text style='font-size:18.72px'>详细信息</text>
+  </view>
+</view>
+
+<view id='content' style='height:{{contentHeight-140}}px'>
+  <text style='font-size:16px'>{{content}}</text>
+</view>
+<view class='weui-media-box__info' id='info' >
+  <text class='weui-media-box__info__meta'>{{type}}</text>
+  <text class='weui-media-box__info__meta'>{{time}}</text>
+  <text class='weui-media-box__info__meta weui-media-box__info__meta_extra'>{{name}}</text>
+</view>

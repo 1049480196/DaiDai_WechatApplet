@@ -1,0 +1,14 @@
+<!--miniprogram/pages/typelist/typelist.wxml-->
+<scroll-view id='scroll' style='height:{{scrollHeight}}px'  bindscrolltolower="moredata" scroll-y>
+ <view wx:for="{{listdatas}}" wx:for-item="i" wx:key="key">
+      <view class='weui-media-box weui-media-box_text' bindtap="detailspage" data-index="{{i.id}}">
+      <text class='weui-media-box__title'>{{i.title}}</text>
+      <text class='weui-media-box__desc' style=''>{{i.content}}</text>
+      <view class='weui-media-box__info'>
+        <text class='weui-media-box__info__meta' style='border-style: solid;border-width:1px;border-color:#00BFFF'>{{i.type_name}}</text>
+        <text class='weui-media-box__info__meta'>{{i.casttime}}</text>
+        <text class='weui-media-box__info__meta weui-media-box__info__meta_extra'>{{i.name}}</text>
+      </view>
+      </view>
+    </view>
+</scroll-view>

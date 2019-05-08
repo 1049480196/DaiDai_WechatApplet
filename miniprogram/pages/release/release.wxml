@@ -1,0 +1,31 @@
+<!--miniprogram/pages/release/release.wxml-->
+<form bindsubmit='submit'>
+<view class='weui-cells__title'>标题</view>
+<view class="weui-cells">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <input class="weui-input" maxlength="{{titlemax}}" bindinput='titleinput' type="text" placeholder="请输入标题" name='title' value='{{form_info}}'></input>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title">分类</view>
+<radio-group name='type' style='width:100%;text-align:center' >
+<radio style='width:25%' value='游戏代打' checked >代打/练</radio>
+<radio style='width:25%' value='代课'>代课 </radio>
+<radio style='width:25%' value='跑腿'>跑腿 </radio>
+<radio style='width:25%' value='其他'>其他 </radio>
+</radio-group>
+<view class="weui-cells__title">详细信息</view>
+<view class="weui-cells weui-cells_form">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea maxlength="{{max}}" class="weui-textarea" placeholder="请输入详细信息" bindinput="inputs" name='content' value='{{form_info}}'></textarea>
+      <view class="weui-textarea-counter">
+        <span>{{currentWordNumber}}</span>/{{max}}</view>
+    </view>
+  </view>
+</view>
+<view class="weui-btn-area">
+    <button class="weui-btn weui-btn_primary" id="showTooltips"  form-type='submit'>发布</button>
+</view>
+</form>
